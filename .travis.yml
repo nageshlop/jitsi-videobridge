@@ -4,4 +4,5 @@ arch:
   - ppc64le
 language: java
 script:
-  - mvn clean:clean install
+  - mvn clean:clean 
+  - mvn install -Dmaven.javadoc.skip=true -B -V
